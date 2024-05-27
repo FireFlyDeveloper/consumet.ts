@@ -164,6 +164,7 @@ class MangaHere extends MangaParser {
           (i, el): IMangaResult => ({
             id: $(el).find('a').attr('href')?.split('/')[2]!,
             title: $(el).find('p.manga-list-4-item-title > a').text(),
+            author: $(el).find('p.manga-list-4-item-tip > a').text(),
             headerForImage: { Referer: this.baseUrl },
             image: $(el).find('a > img').attr('src'),
             description: $(el).find('p').last().text(),
