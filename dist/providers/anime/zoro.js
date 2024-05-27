@@ -99,7 +99,7 @@ class Zoro extends models_1.AnimeParser {
          *
          * @param episodeId Episode id
          */
-        this.fetchEpisodeSources = async (episodeId, server = models_1.StreamingServers.VidCloud) => {
+        this.fetchEpisodeSources = async (episodeId, server = models_1.StreamingServers.VidStreaming) => {
             var _a;
             if (episodeId.startsWith('http')) {
                 const serverUrl = new URL(episodeId);

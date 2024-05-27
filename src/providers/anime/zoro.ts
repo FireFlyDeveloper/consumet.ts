@@ -329,7 +329,7 @@ class Zoro extends AnimeParser {
    */
   override fetchEpisodeSources = async (
     episodeId: string,
-    server: StreamingServers = StreamingServers.VidCloud
+    server: StreamingServers = StreamingServers.VidStreaming
   ): Promise<ISource> => {
     if (episodeId.startsWith('http')) {
       const serverUrl = new URL(episodeId);
